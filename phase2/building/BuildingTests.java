@@ -376,7 +376,7 @@ public class BuildingTests {
             building.add(new Die("G6"), Space.from(Row.at(2), Col.at(2)));
 
             InvalidLevelException ex = assertThrowsExactly(InvalidLevelException.class, () -> {
-                building.allOnLevel(0);
+                building.allOnLevel(Material.WOOD, 0);
             });
 
             assertEquals("Building has no die at level 0.", ex.getMessage());
@@ -393,7 +393,7 @@ public class BuildingTests {
             building.add(new Die("R6"), Space.from(Row.at(2), Col.at(2))); // Building has height of 2.
 
             InvalidLevelException ex = assertThrowsExactly(InvalidLevelException.class, () -> {
-                building.allOnLevel(3);
+                building.allOnLevel(Material.GLASS, 3);
             });
 
             assertEquals("Building has no die at level 3.", ex.getMessage());
