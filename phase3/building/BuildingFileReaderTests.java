@@ -279,7 +279,7 @@ public class BuildingFileReaderTests {
         buildingFileContents += String.format("[row.2]%n");
         buildingFileContents += String.format("%n");
         buildingFileContents += String.format("[row.3]%n");
-
+ 
         Files.write(tempBuildingPath, buildingFileContents.getBytes());
 
         // When an attempt is made to load that building
