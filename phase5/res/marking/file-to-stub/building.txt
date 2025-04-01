@@ -1,0 +1,9 @@
+[row.1]
+col.2 = "S4"
+
+[row.2]
+col.1 = "G2 W3 R4"
+col.2 = "S4"
+
+[row.3]
+col.1 = "R4"
